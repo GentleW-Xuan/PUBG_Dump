@@ -8,63 +8,63 @@
 namespace Offset
 {
 	constexpr uint64_t offset_SpoolBack = 0xe583728;
-	constexpr uint64_t XenuineDecrypt  = 0xE53D428;//ShieldÖ¸Õë
-	constexpr uint64_t UWorld = 0x1003AAD8;//UWorld ÊÀ½ç¶ÔÏóµÄÆ«ÒÆÁ¿
-	constexpr uint64_t GNames = 0x102963B8;//GNames Ãû×Ö±íµÄÆ«ÒÆÁ¿
+	constexpr uint64_t XenuineDecrypt  = 0xE53D428;//ShieldæŒ‡é’ˆ
+	constexpr uint64_t UWorld = 0x1003AAD8;//UWorld ä¸–ç•Œå¯¹è±¡çš„åç§»é‡
+	constexpr uint64_t GNames = 0x102963B8;//GNames åå­—è¡¨çš„åç§»é‡
 	constexpr uint64_t GNameAdd = 0x10;
-	constexpr uint64_t ChunkSize = 0x41C8;//ChunkSize IDD   ¿é´óĞ¡
-	constexpr uint64_t PlayerController = 0x30;//PlayerController Íæ¼Ò¿ØÖÆÆ÷  uint64_t PlayerController = Slot;
-	constexpr uint64_t LocalPlayer = 0xB8;//LocalPlayer ±¾µØÍæ¼Ò
-	constexpr uint64_t GameInstance = 0x160;//GameInstance ÓÎÏ·ÊµÀı
-	constexpr uint64_t GameState = 0x110;//GameState  ÓÎÏ·×´Ì¬
-	constexpr uint64_t CurrentLevel = 0x150;//Level µ±Ç°¹Ø¿¨    *e914c92dc0;£¿  *3ff9ea950a;£¿*6c58a4732f;£¿  *b81afd782e;*01cc3ac894;*4d7f721adf;*000484780f;*129a875714;*d53caa6321;*8f939bc501; *8e0a632a41; 
-	constexpr uint64_t Actor = 0x170;//Actor ½ÇÉ«ÁĞ±í
+	constexpr uint64_t ChunkSize = 0x41C8;//ChunkSize IDD   å—å¤§å°
+	constexpr uint64_t PlayerController = 0x30;//PlayerController ç©å®¶æ§åˆ¶å™¨  uint64_t PlayerController = Slot;
+	constexpr uint64_t LocalPlayer = 0xB8;//LocalPlayer æœ¬åœ°ç©å®¶
+	constexpr uint64_t GameInstance = 0x160;//GameInstance æ¸¸æˆå®ä¾‹
+	constexpr uint64_t GameState = 0x110;//GameState  æ’å
+	constexpr uint64_t CurrentLevel = 0x150;//Level å½“å‰å…³å¡    *e914c92dc0;ï¼Ÿ  *3ff9ea950a;ï¼Ÿ*6c58a4732f;ï¼Ÿ  *b81afd782e;*01cc3ac894;*4d7f721adf;*000484780f;*129a875714;*d53caa6321;*8f939bc501; *8e0a632a41; 
+	constexpr uint64_t Actor = 0x170;//Actor è§’è‰²åˆ—è¡¨
 	constexpr uint64_t ActorsForGC = 0x170;//Actor 
-	constexpr uint64_t AcknowledgedPawn = 0x4A8;//AcknowledgedPawn ÒÑÈ·ÈÏµÄ½ÇÉ«  //Class Engine.PlayerController ÖĞµÄ*f846c93e8c;
-	constexpr uint64_t PlayerCameraManager = 0x4D0;//PlayerCameraManager Íæ¼ÒÏà»ú¹ÜÀíÆ÷     SDKÖĞ´æÔÚEngine_classes.h
+	constexpr uint64_t AcknowledgedPawn = 0x4A8;//AcknowledgedPawn å·²ç¡®è®¤çš„è§’è‰²  //Class Engine.PlayerController ä¸­çš„*f846c93e8c;
+	constexpr uint64_t PlayerCameraManager = 0x4D0;//PlayerCameraManager ç©å®¶ç›¸æœºç®¡ç†å™¨     SDKä¸­å­˜åœ¨Engine_classes.h
 
-	//½âÃÜÊı¾İ
-	constexpr uint64_t ObjID = 0x14;// ¶ÔÏóID
-	constexpr uint64_t DecryptNameIndexRor = 0x0;//PZ Ğı×ª½âÃÜÃû³ÆË÷Òı
+	//è§£å¯†æ•°æ®
+	constexpr uint64_t ObjID = 0x14;// å¯¹è±¡ID
+	constexpr uint64_t DecryptNameIndexRor = 0x0;//PZ æ—‹è½¬è§£å¯†åç§°ç´¢å¼•
 	constexpr uint64_t DecryptOne = 0x31E19CC5;//DecryptOne
 	constexpr uint64_t DecryptTwo = 0xAD249CC5;//DecryptTwo
 	constexpr uint64_t TableOne = 0x5;;//TableOne
 	constexpr uint64_t TableTwo = 0x10;//TableTwo
 
-	constexpr uint64_t ViewTarget = 0xFE0;//TeamViewTarget ¿ÉÊÓÅĞ¶Ï   µ±Ç°ÊÓÒ°Ä¿±ê    SDKÖĞEngine_classes.h
+	constexpr uint64_t ViewTarget = 0xFE0;//TeamViewTarget å¯è§†åˆ¤æ–­   å½“å‰è§†é‡ç›®æ ‡    SDKä¸­Engine_classes.h
 	constexpr uint64_t CameraPos = 0x9F4;//CameraPos
 	constexpr uint64_t CameraRot = 0x9E0;//CameraRot
 	constexpr uint64_t CameraFov = 0x9D8;//CameraFov
 
-	constexpr uint64_t LastTeamNum = 0x2040;//LastTeamNum ÉÏ´Î¶ÓÎé±àºÅ ¿ÉÄÜÊÇ//Class TslGame.TslCharacterÖĞµÄ  int32_t  *584af6295b;
-	constexpr uint64_t TeamNumber = 0x50C;//PlayerTeamId  //Class TslGame.TslPlayerStateBaseÏÂµÄ*7c972484d0;
+	constexpr uint64_t LastTeamNum = 0x2040;//LastTeamNum ä¸Šæ¬¡é˜Ÿä¼ç¼–å· å¯èƒ½æ˜¯//Class TslGame.TslCharacterä¸­çš„  int32_t  *584af6295b;
+	constexpr uint64_t TeamNumber = 0x50C;//PlayerTeamId  //Class TslGame.TslPlayerStateBaseä¸‹çš„*7c972484d0;
 
-	constexpr uint64_t MyHUD = 0x4C8;//MyHUD ÓÃ»§½çÃæHUD    //Class Engine.PlayerController ÏÂµÄ struct AHUD* *141f8a70b4;
-	constexpr uint64_t BlockInputWidgetList = 0x5C0;//ÆÁ±ÎÊäÈëµÄĞ¡²¿¼şÁĞ±í    ÏÂµÄ*2da2c41658;
-	constexpr uint64_t bShowMouseCursor = 0x658;//bShowMouseCursor ÏÔÊ¾Êó±ê¹â±ê    SDKÖĞ´æÔÚEngine_classes.h
-	constexpr uint64_t ComponentLocation = 0x240;//ComponentLocation ×é¼şÎ»ÖÃ
-	constexpr uint64_t ComponentToWorld = 0x230;//ComponentToWorld ×é¼şµ½ÊÀ½ç¾ØÕó
-	constexpr uint64_t CharacterState = 0x1110;//CharacterState ½ÇÉ«×´Ì¬   µôÏß»ùÖÊ
-	constexpr uint64_t Playname = 0x1100;//CharacterName ½ÇÉ«Ãû×Ö   SDKÖĞ//Class TslGame.TslCharacter FString ÏÂµÄ*a98b1ed512;
-	constexpr uint64_t ActorRootComp = 0x5D8;//CharacterMovement ½ÇÉ«ÒÆ¶¯ËÙ¶È    SDKÖĞ´æÔÚEngine_classes.h
-	constexpr uint64_t WorldToMiniMap = 0x9B4;//WorldToMiniMap ÊÀ½ç×ªĞ¡µØÍ¼
-	constexpr uint64_t LayoutData = 0x38;//LayoutData ²¼¾ÖÊı¾İ    SDKÖĞUMG_classes.h
-	constexpr uint64_t Offsets = 0x0;//Offsets Æ«ÒÆÁ¿ SDKÖĞUMG_struct.h
-	constexpr uint64_t Alignment = 0x20;//Alignment ¶ÔÆë SDKÖĞUMG_struct.h
-	constexpr uint64_t Visibility = 0xA1;//Visibility ¿É¼ûĞÔ
-	constexpr uint64_t SelectMinimapSizeIndex = 0x5B0;//SelectMinimapSizeIndex Ğ¡µØÍ¼³ß´çË÷Òı  //Class TslGame.VehicleDrivingTestÖĞµÄOpenedModal
-	constexpr uint64_t Slot = 0x30;//Slot ²å²Û SDKÖĞUMG_classes.h
-	constexpr uint64_t WidgetStateMap = 0x548;//WidgetStateMap Ğ¡²¿¼ş×´Ì¬Ó³Éä
-	constexpr uint64_t TrainingMapGrid = 0x6c0;//SDKÖĞ´æÔÚTslGameMode_classes.h ÑµÁ·µØÍ¼Íø¸ñ
+	constexpr uint64_t MyHUD = 0x4C8;//MyHUD ç”¨æˆ·ç•Œé¢HUD    //Class Engine.PlayerController ä¸‹çš„ struct AHUD* *141f8a70b4;
+	constexpr uint64_t BlockInputWidgetList = 0x5C0;//å±è”½è¾“å…¥çš„å°éƒ¨ä»¶åˆ—è¡¨    ä¸‹çš„*2da2c41658;
+	constexpr uint64_t bShowMouseCursor = 0x658;//bShowMouseCursor æ˜¾ç¤ºé¼ æ ‡å…‰æ ‡    SDKä¸­å­˜åœ¨Engine_classes.h
+	constexpr uint64_t ComponentLocation = 0x240;//ComponentLocation ç»„ä»¶ä½ç½®
+	constexpr uint64_t ComponentToWorld = 0x230;//ComponentToWorld ç»„ä»¶åˆ°ä¸–ç•ŒçŸ©é˜µ
+	constexpr uint64_t CharacterState = 0x1110;//CharacterState è§’è‰²çŠ¶æ€   æ‰çº¿åŸºè´¨
+	constexpr uint64_t Playname = 0x1100;//CharacterName è§’è‰²åå­—   SDKä¸­//Class TslGame.TslCharacter FString ä¸‹çš„*a98b1ed512;
+	constexpr uint64_t ActorRootComp = 0x5D8;//CharacterMovement è§’è‰²ç§»åŠ¨é€Ÿåº¦    SDKä¸­å­˜åœ¨Engine_classes.h
+	constexpr uint64_t WorldToMiniMap = 0x9B4;//WorldToMiniMap ä¸–ç•Œè½¬å°åœ°å›¾
+	constexpr uint64_t LayoutData = 0x38;//LayoutData å¸ƒå±€æ•°æ®    SDKä¸­UMG_classes.h
+	constexpr uint64_t Offsets = 0x0;//Offsets åç§»é‡ SDKä¸­UMG_struct.h
+	constexpr uint64_t Alignment = 0x20;//Alignment å¯¹é½ SDKä¸­UMG_struct.h
+	constexpr uint64_t Visibility = 0xA1;//Visibility å¯è§æ€§
+	constexpr uint64_t SelectMinimapSizeIndex = 0x5B0;//SelectMinimapSizeIndex å°åœ°å›¾å°ºå¯¸ç´¢å¼•  //Class TslGame.VehicleDrivingTestä¸­çš„OpenedModal
+	constexpr uint64_t Slot = 0x30;//Slot æ’æ§½ SDKä¸­UMG_classes.h
+	constexpr uint64_t WidgetStateMap = 0x548;//WidgetStateMap å°éƒ¨ä»¶çŠ¶æ€æ˜ å°„
+	constexpr uint64_t TrainingMapGrid = 0x6c0;//SDKä¸­å­˜åœ¨TslGameMode_classes.h è®­ç»ƒåœ°å›¾ç½‘æ ¼
 	
 	
-	constexpr uint64_t SquadMemberIndex = 0x4E8;// ¶ÓÎéĞ¡¶Ó±ê
-	constexpr uint64_t SafetyZonePosition = 0x564;//SafetyZonePosition °²È«ÇøÎ»ÖÃ SDKÖĞ´æÔÚTslGame_classes.h
-	constexpr uint64_t SafetyZoneRadius = 0x46C;//SafetyZoneRadius °²È«Çø°ë¾¶ SDKÖĞ´æÔÚTslGame_classes.h
-	constexpr uint64_t PoisonGasWarningRadius = 0x5CC;//BlueZoneRadius   À¶È¦°ë¾¶ SDKÖĞ´æÔÚTslGame_classes.h
-	constexpr uint64_t PoisonGasWarningPosition = 0x5B4;//BlueZonePosition À¶È¦Î»ÖÃ SDKÖĞ´æÔÚTslGame_classes.h
+	constexpr uint64_t SquadMemberIndex = 0x4E8;// é˜Ÿä¼å°é˜Ÿæ ‡
+	constexpr uint64_t SafetyZonePosition = 0x564;//SafetyZonePosition å®‰å…¨åŒºä½ç½® SDKä¸­å­˜åœ¨TslGame_classes.h
+	constexpr uint64_t SafetyZoneRadius = 0x46C;//SafetyZoneRadius å®‰å…¨åŒºåŠå¾„ SDKä¸­å­˜åœ¨TslGame_classes.h
+	constexpr uint64_t PoisonGasWarningRadius = 0x5CC;//BlueZoneRadius   è“åœˆåŠå¾„ SDKä¸­å­˜åœ¨TslGame_classes.h
+	constexpr uint64_t PoisonGasWarningPosition = 0x5B4;//BlueZonePosition è“åœˆä½ç½® SDKä¸­å­˜åœ¨TslGame_classes.h
 
-	//½âÃÜÑªÁ¿1
+	//è§£å¯†è¡€é‡1
 
 	constexpr uint64_t HeaFlag = 0x210;
 	constexpr uint64_t Health1 = 0xA60;
@@ -89,99 +89,99 @@ namespace Offset
 	constexpr uint64_t Health_keys13 = 0x50932707;
 	constexpr uint64_t Health_keys14 = 0x45099E38;
 	constexpr uint64_t Health_keys15 = 0x14D82A56;
-	constexpr uint64_t Health_Die = 0x1860; // GroggyHealth ĞéÈõ×´Ì¬ÑªÁ¿  SDKÖĞ´æÔÚTslGame_classes.h
+	constexpr uint64_t Health_Die = 0x1860; // GroggyHealth è™šå¼±çŠ¶æ€è¡€é‡  SDKä¸­å­˜åœ¨TslGame_classes.h
 
-	constexpr uint64_t PlayerArray = 0x410;//Íæ¼ÒÊı×é SDKÖĞ´æÔÚEngine_classes.h
-	constexpr uint64_t AccountId = 0x538;//ÕË»§ID SDKÖĞ´æÔÚTslGame_classes.h
-	constexpr uint64_t PlayerName = 0x438;//Íæ¼ÒÃû×Ö SDKÖĞ´æÔÚEngine_classes.h
-	constexpr uint64_t PlayerStatusType = 0x420;//Íæ¼Ò×´Ì¬ÀàĞÍ
-	constexpr uint64_t PlayerState = 0x438;//Íæ¼Ò×´Ì¬ SDKÖĞEngine_classes.h
-	constexpr uint64_t PlayerSatisitc = 0x4D8;//Íæ¼ÒÍ³¼ÆPlayerStatistic    //Class TslGame.TslPlayerStateBaseÖĞµÄ*735348bcaa;  
-	constexpr uint64_t DamageDealtOnEnemy = 0x488;//¶ÔµĞÈËÔì³ÉµÄÉËº¦ SDKÖĞ´æÔÚTslGame_classes.h
-	constexpr uint64_t SpectatedCount = 0x1260;//¹ÛÕ½ÈËÊı   Audience  SDKÖĞ//Class TslGame.TslCharacter µÄ int32_t *d35f285ddb;
+	constexpr uint64_t PlayerArray = 0x410;//ç©å®¶æ•°ç»„ SDKä¸­å­˜åœ¨Engine_classes.h
+	constexpr uint64_t AccountId = 0x538;//è´¦æˆ·ID SDKä¸­å­˜åœ¨TslGame_classes.h
+	constexpr uint64_t PlayerName = 0x438;//ç©å®¶åå­— SDKä¸­å­˜åœ¨Engine_classes.h
+	constexpr uint64_t PlayerStatusType = 0x420;//ç©å®¶çŠ¶æ€ç±»å‹
+	constexpr uint64_t PlayerState = 0x438;//ç©å®¶çŠ¶æ€ SDKä¸­Engine_classes.h
+	constexpr uint64_t PlayerSatisitc = 0x4D8;//ç©å®¶ç»Ÿè®¡PlayerStatistic    //Class TslGame.TslPlayerStateBaseä¸­çš„*735348bcaa;  
+	constexpr uint64_t DamageDealtOnEnemy = 0x488;//å¯¹æ•Œäººé€ æˆçš„ä¼¤å®³ SDKä¸­å­˜åœ¨TslGame_classes.h
+	constexpr uint64_t SpectatedCount = 0x1260;//è§‚æˆ˜äººæ•°   Audience  SDKä¸­//Class TslGame.TslCharacter çš„ int32_t *d35f285ddb;
 
-	//Éú´æµÈ¼¶
+	//ç”Ÿå­˜ç­‰çº§
 
-	constexpr uint64_t PubgIdData = 0xBC0; ////Class TslGame.TslPlayerStateBaseÏÂµÄ*e13ab1c336;
-	constexpr uint64_t PartnerLevel = 0x6BA; //ºÏ×÷ÕßµÈ¼¶ SDKÖĞ´æÔÚTslGame_classes.h
-	constexpr uint64_t SurvivalTier = PubgIdData + 0x20;  //ÓÃÕâ¸öSurvivalLevelÊ®Áù½øÖÆ - 4 == SurvivalTier SDKÖĞ´æÔÚTslGame_struct.h
-	constexpr uint64_t SurvivalLevel = PubgIdData + 0x24; //ÓÃÕâ¸öSurvivalLevelÊ®Áù½øÖÆ -24 == PubgIdData SDKÖĞ´æÔÚTslGame_struct.h
+	constexpr uint64_t PubgIdData = 0xBC0; ////Class TslGame.TslPlayerStateBaseä¸‹çš„*e13ab1c336;
+	constexpr uint64_t PartnerLevel = 0x6BA; //åˆä½œè€…ç­‰çº§ SDKä¸­å­˜åœ¨TslGame_classes.h
+	constexpr uint64_t SurvivalTier = PubgIdData + 0x20;  //ç”¨è¿™ä¸ªSurvivalLevelåå…­è¿›åˆ¶ - 4 == SurvivalTier SDKä¸­å­˜åœ¨TslGame_struct.h
+	constexpr uint64_t SurvivalLevel = PubgIdData + 0x24; //ç”¨è¿™ä¸ªSurvivalLevelåå…­è¿›åˆ¶ -24 == PubgIdData SDKä¸­å­˜åœ¨TslGame_struct.h
 
-	constexpr uint64_t CharacterClanInfo = 0x890;//½ÇÉ«¼Ò×åĞÅÏ¢
-	constexpr uint64_t EquippedWeapons = 0x1F8;//×°±¸µÄÎäÆ÷   *f4edfbc71c;£¿*9872b3949b;£¿*58594e6960;£¿*28dc2dd669;£¿*088a8665bc;£¿*99be31988b;£¿*8233547965;£¿*bfd0ba5fe6;£¿*12b4b97aa9;£¿*571cd96e0f; £¿*eddc4c17af;£¿*de80cd0c28;£¿*fa393ac303; £¿*6b76bdc664;£¿*403855fc64;£¿
-	constexpr uint64_t WeaponProcessor = 0x9A0;//ÎäÆ÷´¦ÀíÆ÷  SDKÖĞ´æÔÚTslGame_classes.h
-	constexpr uint64_t CurrentWeaponIndex = 0x301;//µ±Ç°ÎäÆ÷Ë÷Òı    ÏÂµÄ//Class OnlineSubsystemUtils.*d6b24982c2*aab47ae436
-	constexpr uint64_t WeaponTrajectoryData = 0x10D0;//ÎäÆ÷µ¯µÀÊı¾İ SDKÖĞ´æÔÚTslGame_classes.h
-	constexpr uint64_t TrajectoryGravityZ = 0xFFC;//µ¯µÀÖØÁ¦Z SDKÖĞ´æÔÚTslGame_classes.h
-	constexpr uint64_t FiringAttachPoint = 0x880;//Éä»÷¸½×Åµã  //Class TslGame.TslWeapon struct FName *e5451bf277; 
-	constexpr uint64_t ScopingAttachPoint = 0xCA0;//Ãé×¼¸½×Åµã SDKÖĞ´æÔÚTslGame_classes.h
-	constexpr uint64_t TrajectoryConfig = 0x100;//µ¯µÀÅäÖÃ  *e52136456d;£¿*c7a0d508cc;£¿*19b4e4b47f;£¿*6f80b2a3d9;£¿*4f05fa3bc6;£¿*d00245c18c; £¿*a73c420349; £¨¸Ğ¾õÊÇÕâ¸ö£©
-	constexpr uint64_t BallisticCurve = 0x28;//µ¯µÀÇúÏß  Ì«¶àÁË 
-	constexpr uint64_t FloatCurves = 0x30;//¸¡¶¯ÇúÏß  *375c2ab903;*806b1862b9;  *d6c3f91770; *f1e4989c5a;*41934c3f49;*c9432b8b8b;*84f208ecb1;*ab8da07e29;*ae6d4a9f47;*70d64a78c3;*36c9718028;*9380a8a1c5;*3258d9889f;*9c88c4e353;*e758b9da94;*04f97ddeb3;*68538debc6;*2623dc93e7;*d2ff854c15;*cf19e09d4c;*9018b6c8bd;*aa24363a8a;*4a626e9032;*dd1af50eee
-	constexpr uint64_t Mesh3P = 0x7D0;//ÈıÈË³ÆÄ£ĞÍ Class TslGame.TslWeaponÖĞµÄ EncryptedObjectProperty *a74eb10ce4;
-	constexpr uint64_t Keys = 0x60;//FRichCurve_Keys = 0x60;//¼üÖµ SDKÖĞ´æÔÚEngine_struct.h
+	constexpr uint64_t CharacterClanInfo = 0x890;//è§’è‰²å®¶æ—ä¿¡æ¯
+	constexpr uint64_t EquippedWeapons = 0x1F8;//è£…å¤‡çš„æ­¦å™¨   *f4edfbc71c;ï¼Ÿ*9872b3949b;ï¼Ÿ*58594e6960;ï¼Ÿ*28dc2dd669;ï¼Ÿ*088a8665bc;ï¼Ÿ*99be31988b;ï¼Ÿ*8233547965;ï¼Ÿ*bfd0ba5fe6;ï¼Ÿ*12b4b97aa9;ï¼Ÿ*571cd96e0f; ï¼Ÿ*eddc4c17af;ï¼Ÿ*de80cd0c28;ï¼Ÿ*fa393ac303; ï¼Ÿ*6b76bdc664;ï¼Ÿ*403855fc64;ï¼Ÿ
+	constexpr uint64_t WeaponProcessor = 0x9A0;//æ­¦å™¨å¤„ç†å™¨  SDKä¸­å­˜åœ¨TslGame_classes.h
+	constexpr uint64_t CurrentWeaponIndex = 0x301;//å½“å‰æ­¦å™¨ç´¢å¼•    ä¸‹çš„//Class OnlineSubsystemUtils.*d6b24982c2*aab47ae436
+	constexpr uint64_t WeaponTrajectoryData = 0x10D0;//æ­¦å™¨å¼¹é“æ•°æ® SDKä¸­å­˜åœ¨TslGame_classes.h
+	constexpr uint64_t TrajectoryGravityZ = 0xFFC;//å¼¹é“é‡åŠ›Z SDKä¸­å­˜åœ¨TslGame_classes.h
+	constexpr uint64_t FiringAttachPoint = 0x880;//å°„å‡»é™„ç€ç‚¹  //Class TslGame.TslWeapon struct FName *e5451bf277; 
+	constexpr uint64_t ScopingAttachPoint = 0xCA0;//ç„å‡†é™„ç€ç‚¹ SDKä¸­å­˜åœ¨TslGame_classes.h
+	constexpr uint64_t TrajectoryConfig = 0x100;//å¼¹é“é…ç½®  *e52136456d;ï¼Ÿ*c7a0d508cc;ï¼Ÿ*19b4e4b47f;ï¼Ÿ*6f80b2a3d9;ï¼Ÿ*4f05fa3bc6;ï¼Ÿ*d00245c18c; ï¼Ÿ*a73c420349; ï¼ˆæ„Ÿè§‰æ˜¯è¿™ä¸ªï¼‰
+	constexpr uint64_t BallisticCurve = 0x28;//å¼¹é“æ›²çº¿  å¤ªå¤šäº† 
+	constexpr uint64_t FloatCurves = 0x30;//æµ®åŠ¨æ›²çº¿  *375c2ab903;*806b1862b9;  *d6c3f91770; *f1e4989c5a;*41934c3f49;*c9432b8b8b;*84f208ecb1;*ab8da07e29;*ae6d4a9f47;*70d64a78c3;*36c9718028;*9380a8a1c5;*3258d9889f;*9c88c4e353;*e758b9da94;*04f97ddeb3;*68538debc6;*2623dc93e7;*d2ff854c15;*cf19e09d4c;*9018b6c8bd;*aa24363a8a;*4a626e9032;*dd1af50eee
+	constexpr uint64_t Mesh3P = 0x7D0;//ä¸‰äººç§°æ¨¡å‹ Class TslGame.TslWeaponä¸­çš„ EncryptedObjectProperty *a74eb10ce4;
+	constexpr uint64_t Keys = 0x60;//FRichCurve_Keys = 0x60;//é”®å€¼ SDKä¸­å­˜åœ¨Engine_struct.h
 
 
-	constexpr uint64_t AttachedStaticComponentMap = 0x1340;//¸½×ÅµÄ¾²Ì¬×é¼şÓ³Éä    //Class TslGame.*6f65b02505ÏÂµÄ*01eb88bdb2; 
+	constexpr uint64_t AttachedStaticComponentMap = 0x1340;//é™„ç€çš„é™æ€ç»„ä»¶æ˜ å°„    //Class TslGame.*6f65b02505ä¸‹çš„*01eb88bdb2; 
 	constexpr uint64_t ElapsedCookingTime = 0xB9C;//
-	constexpr uint64_t PlayerInput = 0x548; //Íæ¼ÒÊäÈë SDKÖĞ´æÔÚEngine_classes.h
-	constexpr uint64_t InputAxisProperties = 0x130;//UnkXorKey0 ÊäÈëÖáÊôĞÔ
-	constexpr uint64_t Veloctity = 0x3d0;//SDKÖĞLastUpdateVelocity ×îºó¸üĞÂËÙ¶È  *d16f6f655d;    *d9acf687f5; *c63a419d38;
-	constexpr uint64_t Mesh = 0x610;//SDKÖĞMesh Íø¸ñ SDKÖĞ´æÔÚEngine_classes.h
+	constexpr uint64_t PlayerInput = 0x548; //ç©å®¶è¾“å…¥ SDKä¸­å­˜åœ¨Engine_classes.h
+	constexpr uint64_t InputAxisProperties = 0x130;//UnkXorKey0 è¾“å…¥è½´å±æ€§
+	constexpr uint64_t Veloctity = 0x3d0;//SDKä¸­LastUpdateVelocity æœ€åæ›´æ–°é€Ÿåº¦  *d16f6f655d;    *d9acf687f5; *c63a419d38;
+	constexpr uint64_t Mesh = 0x610;//SDKä¸­Mesh ç½‘æ ¼ SDKä¸­å­˜åœ¨Engine_classes.h
 
-	constexpr uint64_t m_rootComponent = 0x260;//m_rootComponent   RootComponent SDKÖĞ´æÔÚEngine_classes.h
-	constexpr uint64_t Bone = 0xAC0;  //BoneArray   StaticMesh ¾²Ì¬Íø¸ñ SDKÖĞ´æÔÚEngine_classes.h
-	constexpr uint64_t Eyes = 0x74C; //Eyes ÑÛ¾¦
-	constexpr uint64_t bAlwaysCreatePhysicsState = 0x480;//bAlwaysCreatePhysicsState ÃÔÎí¹ıÂË SDKÖĞ´æÔÚEngine_classes.h 
+	constexpr uint64_t m_rootComponent = 0x260;//m_rootComponent   RootComponent SDKä¸­å­˜åœ¨Engine_classes.h
+	constexpr uint64_t Bone = 0xAC0;  //BoneArray   StaticMesh é™æ€ç½‘æ ¼ SDKä¸­å­˜åœ¨Engine_classes.h
+	constexpr uint64_t Eyes = 0x74C; //Eyes çœ¼ç›
+	constexpr uint64_t bAlwaysCreatePhysicsState = 0x480;//bAlwaysCreatePhysicsState è¿·é›¾è¿‡æ»¤ SDKä¸­å­˜åœ¨Engine_classes.h 
 
-	constexpr uint64_t VehicleMovement = 0x470;//UnkXorKey1 ³µÁ¾ÒÆ¶¯ SDKÖĞ´æÔÚPhysXVehicles_classes.h
-	constexpr uint64_t VehicleRiderComponent = 0x2150;//VehicleRiderComponent ³µÁ¾Æï³Ë×é¼ş SDKÖĞ´æÔÚTslGame_classes.h
-	constexpr uint64_t ReplicatedMovement = 0x60;//ReplicatedMovement ¸´ÖÆµÄÒÆ¶¯ SDKÖĞ´æÔÚEngine_classes.h
-	constexpr uint64_t LastVehiclePawn = 0x260;//LastVehiclePawn ÉÏ´Î³µÁ¾½ÇÉ«    *8c1474d4dd;£¿*6c688117e6;£¿ *73f906f72e;£¿*8fedb2cedb;£¿*1b3aa6ccf0;£¿*3b2d80596f;£¿*13de2d75e4;£¿*69fa3eb2eb;£¿*93e28e2faa;£¿*6afc8e1543;£¿*96088726bc;£¿*5212777759;£¿*55c50a42ee; £¿
-	constexpr uint64_t SeatIndex = 0x220;//SeatIndex ×ùÎ»Ë÷Òı SDKÖĞ·´ÕıÓĞTslGame_struct.h
+	constexpr uint64_t VehicleMovement = 0x470;//UnkXorKey1 è½¦è¾†ç§»åŠ¨ SDKä¸­å­˜åœ¨PhysXVehicles_classes.h
+	constexpr uint64_t VehicleRiderComponent = 0x2150;//VehicleRiderComponent è½¦è¾†éª‘ä¹˜ç»„ä»¶ SDKä¸­å­˜åœ¨TslGame_classes.h
+	constexpr uint64_t ReplicatedMovement = 0x60;//ReplicatedMovement å¤åˆ¶çš„ç§»åŠ¨ SDKä¸­å­˜åœ¨Engine_classes.h
+	constexpr uint64_t LastVehiclePawn = 0x260;//LastVehiclePawn ä¸Šæ¬¡è½¦è¾†è§’è‰²    *8c1474d4dd;ï¼Ÿ*6c688117e6;ï¼Ÿ *73f906f72e;ï¼Ÿ*8fedb2cedb;ï¼Ÿ*1b3aa6ccf0;ï¼Ÿ*3b2d80596f;ï¼Ÿ*13de2d75e4;ï¼Ÿ*69fa3eb2eb;ï¼Ÿ*93e28e2faa;ï¼Ÿ*6afc8e1543;ï¼Ÿ*96088726bc;ï¼Ÿ*5212777759;ï¼Ÿ*55c50a42ee; ï¼Ÿ
+	constexpr uint64_t SeatIndex = 0x220;//SeatIndex åº§ä½ç´¢å¼• SDKä¸­åæ­£æœ‰TslGame_struct.h
 
-	constexpr uint64_t Wheels = 0x318;//UnkXorKey2 ³µÂÖ SDKÖĞ´æÔÚPhysXVehicles_classes.h
-	constexpr uint64_t WheelLocation = 0xf8;//³µÂÖÎ»ÖÃ UnkXorKey6,
-	constexpr uint64_t DampingRate = 0x4C;//×ÔÃé   ×èÄáÂÊ  UnkXorKey3, 
-	constexpr uint64_t ShapeRadius = 0x40;//UnkXorKey4 ×ÔÃé  ĞÎ×´°ë¾¶
+	constexpr uint64_t Wheels = 0x318;//UnkXorKey2 è½¦è½® SDKä¸­å­˜åœ¨PhysXVehicles_classes.h
+	constexpr uint64_t WheelLocation = 0xf8;//è½¦è½®ä½ç½® UnkXorKey6,
+	constexpr uint64_t DampingRate = 0x4C;//è‡ªç„   é˜»å°¼ç‡  UnkXorKey3, 
+	constexpr uint64_t ShapeRadius = 0x40;//UnkXorKey4 è‡ªç„  å½¢çŠ¶åŠå¾„
 
-	constexpr uint64_t DroppedItemGroup = 0x140;//DroppedItemGroup µôÂäÎïÆ·×é
-	constexpr uint64_t Packge = 0x590;// °ü¹üÄÚÎïÆ·Packge  Class TslGame.ItemPackageÖĞµÄItems
-	constexpr uint64_t DroppedItemGroup_UItem = 0x7D8;//DroppedItemGroup_UItem µôÂäÎïÆ·×éÄÚÎïÆ·  ¿ÉÄÜClass TslGame.*bdadfa497f ÖĞµÄItem
+	constexpr uint64_t DroppedItemGroup = 0x140;//DroppedItemGroup æ‰è½ç‰©å“ç»„
+	constexpr uint64_t Packge = 0x590;// åŒ…è£¹å†…ç‰©å“Packge  Class TslGame.ItemPackageä¸­çš„Items
+	constexpr uint64_t DroppedItemGroup_UItem = 0x7D8;//DroppedItemGroup_UItem æ‰è½ç‰©å“ç»„å†…ç‰©å“  å¯èƒ½Class TslGame.*bdadfa497f ä¸­çš„Item
 
-	constexpr uint64_t AttachedItems = 0x828;//¸½¼şÎïÆ·
-	constexpr uint64_t WeaponAttachmentData = 0x138;//ÎäÆ÷¸½¼şÊı¾İ TslGame_struct.hÕâÀïÃæ·´ÕıÓĞ
-	constexpr uint64_t ItemTable = 0xA8;//ÎïÆ·Ò»
-	constexpr uint64_t ItemID = 0x26C;//ÎïÆ·¶ş SDKÖĞW_AIWeaponButton_classes.h
-	constexpr uint64_t DroppedItem = 0x458;//DroppedItem µôÂäÎïÆ· SDKÖĞ¿ÉÄÜ´æÔÚTslGame_classes.h
+	constexpr uint64_t AttachedItems = 0x828;//é™„ä»¶ç‰©å“
+	constexpr uint64_t WeaponAttachmentData = 0x138;//æ­¦å™¨é™„ä»¶æ•°æ® TslGame_struct.hè¿™é‡Œé¢åæ­£æœ‰
+	constexpr uint64_t ItemTable = 0xA8;//ç‰©å“ä¸€
+	constexpr uint64_t ItemID = 0x26C;//ç‰©å“äºŒ SDKä¸­W_AIWeaponButton_classes.h
+	constexpr uint64_t DroppedItem = 0x458;//DroppedItem æ‰è½ç‰©å“ SDKä¸­å¯èƒ½å­˜åœ¨TslGame_classes.h
 
-	constexpr uint64_t AnimScriptInstance = 0xDD8;//AnimScriptInstance ¶¯»­½Å±¾ÊµÀı SDKÖĞ´æÔÚEngine_classes.h 
-	constexpr uint64_t PreEvalPawnState = 0x6D8;//Ô¤ÆÀ¹À½ÇÉ«×´Ì¬  SDKÖĞ´æÔÚTslGame_classes.h
+	constexpr uint64_t AnimScriptInstance = 0xDD8;//AnimScriptInstance åŠ¨ç”»è„šæœ¬å®ä¾‹ SDKä¸­å­˜åœ¨Engine_classes.h 
+	constexpr uint64_t PreEvalPawnState = 0x6D8;//é¢„è¯„ä¼°è§’è‰²çŠ¶æ€  SDKä¸­å­˜åœ¨TslGame_classes.h
 
-	constexpr uint64_t bIsScoping_CP = 0xDC6;//ÊÇ·ñÕıÔÚÃé×¼ SDKÖĞ´æÔÚTslGame_classes.h
-	constexpr uint64_t bIsReloading_CP = 0x988;//×ÔÃé ÊÇ·ñÕıÔÚ×°Ìî SDKÖĞ´æÔÚTslGame_classes.h
-	constexpr uint64_t RecoilADSRotation_CP = 0xA9C;//Ãé×¼Ê±µÄºó×øÁ¦Ğı×ª
-	constexpr uint64_t ControlRotation_CP = 0x7F4;//¿ØÖÆĞı×ª SDKÖĞ´æÔÚTslGame_classes.h
-	constexpr uint64_t LeanLeftAlpha_CP = 0xEAC;//Ïò×óÇãĞ± SDKÖĞ´æÔÚTslGame_classes.h
-	constexpr uint64_t LeanRightAlpha_CP = 0xEB0;//ÏòÓÒÇãĞ± SDKÖĞ´æÔÚTslGame_classes.h
-	constexpr uint64_t CurrentAmmoData = 0xAB8;//×Óµ¯ÊıÁ¿   //Class TslGame.TslWeapon_GunÏÂµÄ*446e0e140c;
+	constexpr uint64_t bIsScoping_CP = 0xDC6;//æ˜¯å¦æ­£åœ¨ç„å‡† SDKä¸­å­˜åœ¨TslGame_classes.h
+	constexpr uint64_t bIsReloading_CP = 0x988;//è‡ªç„ æ˜¯å¦æ­£åœ¨è£…å¡« SDKä¸­å­˜åœ¨TslGame_classes.h
+	constexpr uint64_t RecoilADSRotation_CP = 0xA9C;//ç„å‡†æ—¶çš„åååŠ›æ—‹è½¬
+	constexpr uint64_t ControlRotation_CP = 0x7F4;//æ§åˆ¶æ—‹è½¬ SDKä¸­å­˜åœ¨TslGame_classes.h
+	constexpr uint64_t LeanLeftAlpha_CP = 0xEAC;//å‘å·¦å€¾æ–œ SDKä¸­å­˜åœ¨TslGame_classes.h
+	constexpr uint64_t LeanRightAlpha_CP = 0xEB0;//å‘å³å€¾æ–œ SDKä¸­å­˜åœ¨TslGame_classes.h
+	constexpr uint64_t CurrentAmmoData = 0xAB8;//å­å¼¹æ•°é‡   //Class TslGame.TslWeapon_Gunä¸‹çš„*446e0e140c;
 	
-	constexpr uint64_t StaticSockets = 0xc0;//SDKÖĞUStaticMesh_Sockets¾²Ì¬²å²Û    Class Engine.StaticMeshÖĞSockets
-	constexpr uint64_t StaticSocketName = 0x28;//UStaticMeshSocket_SocketName ¾²Ì¬²å²ÛÃû³Æ               Class Engine.*2b2a7f71e1
-	constexpr uint64_t StaticRelativeLocation = 0x30;//UStaticMeshSocket_RelativeLocation ¾²Ì¬Ïà¶ÔÎ»ÖÃ   Class Engine.*2b2a7f71e1
-	constexpr uint64_t StaticRelativeRotation = 0x3c; //UStaticMeshSocket_RelativeRotation ¾²Ì¬Ïà¶ÔĞı×ª  Class Engine.*2b2a7f71e1
-	constexpr uint64_t StaticRelativeScale = 0x48;//UStaticMeshSocket_RelativeScale ¾²Ì¬Ïà¶ÔËõ·Å         Class Engine.*2b2a7f71e1
+	constexpr uint64_t StaticSockets = 0xc0;//SDKä¸­UStaticMesh_Socketsé™æ€æ’æ§½    Class Engine.StaticMeshä¸­Sockets
+	constexpr uint64_t StaticSocketName = 0x28;//UStaticMeshSocket_SocketName é™æ€æ’æ§½åç§°               Class Engine.*2b2a7f71e1
+	constexpr uint64_t StaticRelativeLocation = 0x30;//UStaticMeshSocket_RelativeLocation é™æ€ç›¸å¯¹ä½ç½®   Class Engine.*2b2a7f71e1
+	constexpr uint64_t StaticRelativeRotation = 0x3c; //UStaticMeshSocket_RelativeRotation é™æ€ç›¸å¯¹æ—‹è½¬  Class Engine.*2b2a7f71e1
+	constexpr uint64_t StaticRelativeScale = 0x48;//UStaticMeshSocket_RelativeScale é™æ€ç›¸å¯¹ç¼©æ”¾         Class Engine.*2b2a7f71e1
 
-	constexpr uint64_t InputYawScale = 0x64c;//ÊäÈëÆ«º½Ëõ·Å SDKÖĞ´æÔÚEngine_classes.h
+	constexpr uint64_t InputYawScale = 0x64c;//è¾“å…¥åèˆªç¼©æ”¾ SDKä¸­å­˜åœ¨Engine_classes.h
 
-	constexpr uint64_t AimOffsets = 0x1B08;//±»ÃéÆ«ÒÆ SDKÖĞ´æÔÚTslGame_classes.h
+	constexpr uint64_t AimOffsets = 0x1B08;//è¢«ç„åç§» SDKä¸­å­˜åœ¨TslGame_classes.h
 	 
-	constexpr uint64_t AntiCheatCharacterSyncManager = 0x1020;//·´×÷±×½ÇÉ«Í¬²½¹ÜÀíÆ÷
+	constexpr uint64_t AntiCheatCharacterSyncManager = 0x1020;//åä½œå¼Šè§’è‰²åŒæ­¥ç®¡ç†å™¨
 
-	constexpr uint64_t TimeSeconds = 0x9A4;//Ê±¼äÃëÊı
-	constexpr uint64_t TimeTillExplosion = 0x7AC;//ÊÖÀ×µ¹¼ÆÊ±ºÍÇ¡À×µ¹¼ÆÊ±  SDKÖĞ´æÔÚTslGame_classes.h
-	constexpr uint64_t WeaponConfig_WeaponClass = 0x581;//ÕâÊÇÇ¡À×¶ÁÃë
-	constexpr uint64_t ExplodeState = 0x5E0;//±¬Õ¨×´Ì¬    //Class TslGame.*0bc6bc40d3ÏÂµÄ*4ee9e0539e; 
+	constexpr uint64_t TimeSeconds = 0x9A4;//æ—¶é—´ç§’æ•°
+	constexpr uint64_t TimeTillExplosion = 0x7AC;//æ‰‹é›·å€’è®¡æ—¶å’Œæ°é›·å€’è®¡æ—¶  SDKä¸­å­˜åœ¨TslGame_classes.h
+	constexpr uint64_t WeaponConfig_WeaponClass = 0x581;//è¿™æ˜¯æ°é›·è¯»ç§’
+	constexpr uint64_t ExplodeState = 0x5E0;//çˆ†ç‚¸çŠ¶æ€    //Class TslGame.*0bc6bc40d3ä¸‹çš„*4ee9e0539e; 
 
 
 
@@ -190,15 +190,15 @@ namespace Offset
 	//constexpr uint32_t MouseX = 16253;
 	//constexpr uint32_t MouseY = 16254;
 
-	constexpr uint64_t LastFrameCameraCacheLocation =  0x9F4;//Î´¸üĞÂ
-	constexpr uint64_t LastFrameCameraCacheRotation = 0x9E0;//Î´¸üĞÂ
-	constexpr uint64_t LastFrameCameraCacheFOV = 0x9D8;//Î´¸üĞÂ
+	constexpr uint64_t LastFrameCameraCacheLocation =  0x9F4;//æœªæ›´æ–°
+	constexpr uint64_t LastFrameCameraCacheRotation = 0x9E0;//æœªæ›´æ–°
+	constexpr uint64_t LastFrameCameraCacheFOV = 0x9D8;//æœªæ›´æ–°
 
 
 
 	
 
-	//½âÃÜÑªÁ¿2
+	//è§£å¯†è¡€é‡2
 
 	constexpr uint32_t Health = Health4;
 	constexpr uint32_t Gender = 0xac0;
